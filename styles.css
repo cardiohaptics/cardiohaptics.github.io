@@ -224,3 +224,49 @@ h2 { letter-spacing: -.01em; }
 @media (min-width: 720px) {
   .faq-grid { grid-template-columns: 1fr 1fr; align-items: start; }
 }
+
+/* ---------- secondary page (privacy) ---------- */
+
+.hero-sub { padding: 48px 0 40px; }
+.hero-sub .lede { margin-top: 14px; }
+
+.back { color: var(--crimson-deep); text-decoration: none; }
+.back:hover { text-decoration: underline; }
+.back::before { content: "\2190"; margin-right: 7px; }
+
+.updated { margin: 18px 0 0; }
+
+.tick { list-style: none; margin: 14px 0 0; padding: 0; }
+.tick li { position: relative; padding-left: 28px; margin: 9px 0; }
+.tick li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: .62em;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--crimson), var(--violet));
+}
+
+.prose {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 8px 30px 26px;
+  box-shadow: var(--shadow);
+}
+.prose h3 {
+  margin: 30px 0 8px;
+  font-size: 1.08rem;
+  letter-spacing: -.005em;
+}
+.prose h3:first-child { margin-top: 26px; }
+.prose p { margin: 0 0 12px; }
+.prose ul { margin: 0 0 14px; padding-left: 22px; }
+.prose li { margin: 5px 0; }
+.prose > :last-child { margin-bottom: 0; }
+
+@media (max-width: 520px) {
+  .prose { padding: 6px 20px 20px; }
+}

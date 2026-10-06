@@ -6,12 +6,17 @@ Its only purpose is to serve the app's Support URL for Apple App Store Connect.
 It is a lightweight static site — plain HTML and CSS, no framework, no build step.
 
 **Public support URL:** <https://cardiohaptics.github.io/>
+**Privacy policy URL:** <https://cardiohaptics.github.io/privacy.html>
+
+Both go into App Store Connect: the first as the app's Support URL, the second as its
+Privacy Policy URL.
 
 ## Contents
 
 | File | Purpose |
 | --- | --- |
 | `index.html` | The support page: app description, Support section, FAQ, disclaimer |
+| `privacy.html` | The privacy policy, linked from the support page footer |
 | `styles.css` | All styling |
 | `favicon.svg` | Site icon |
 | `.nojekyll` | Disables Jekyll processing so files are served exactly as committed |
@@ -34,6 +39,14 @@ is live within about a minute.
 
 Edit `index.html` or `styles.css`, commit, and push to `main`. The workflow redeploys
 automatically.
+
+## Keeping the privacy policy honest
+
+`privacy.html` describes the app as it is actually built, not as a template. At the time it
+was written the app had no networking code, no third-party packages, no analytics and no
+system permissions, and `PrivacyInfo.xcprivacy` declared no tracking and no collected data
+types. If any of that changes — a crash reporter, a sync feature, an added permission — the
+policy must be updated in the same change.
 
 ## Support contact
 

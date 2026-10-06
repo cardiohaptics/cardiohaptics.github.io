@@ -1,11 +1,11 @@
-# ghalebse-spec.github.io
+# cardiohaptics.github.io
 
 Public support website for the iOS app **mrmr: cardio haptics**.
 
 Its only purpose is to serve the app's Support URL for Apple App Store Connect.
 It is a lightweight static site — plain HTML and CSS, no framework, no build step.
 
-**Public support URL:** <https://ghalebse-spec.github.io/>
+**Public support URL:** <https://cardiohaptics.github.io/>
 
 ## Contents
 
@@ -19,8 +19,8 @@ It is a lightweight static site — plain HTML and CSS, no framework, no build s
 
 ## How GitHub Pages is configured
 
-This is a **user Pages repository** (named `ghalebse-spec.github.io`), so it is published
-at the account root: `https://ghalebse-spec.github.io/`.
+This is a **user Pages repository** (named `cardiohaptics.github.io`), so it is published
+at the account root: `https://cardiohaptics.github.io/`.
 
 Pages is built with **GitHub Actions**, not the legacy branch-based deploy. In
 **Settings → Pages → Build and deployment**, *Source* is set to **GitHub Actions**.
